@@ -1,0 +1,603 @@
+export const propertyInfo = {
+  name: "303 OYSTER BAY",
+  tagline: "Beachfront Stay · Surathkal, Mangaluru",
+  heroSubtitle: "The Arabian Sea at your doorstep. Uninterrupted views from every room. None of the crowds.",
+  address: "Iddya, Surathkal • Mangaluru, Karnataka, India",
+  hostPhone: "+91 9910100561",
+  securityPhone: "+91 90000 00000",
+  whatsappNumber: "919910100561",
+  wifiName: "Patina 5G",
+  wifiPassword: "BeachHouse@303Oyster", // Convenience copy button
+  
+  specs: [
+    { label: "2 Bedrooms", icon: "Bed" },
+    { label: "Sleeps 4 + 2", icon: "Users" },
+    { label: "High-Speed WiFi", icon: "Wifi" },
+    { label: "Fully Equipped Kitchen", icon: "Utensils" },
+    { label: "Reserved Parking", icon: "Car" },
+    { label: "Self Check-In", icon: "Key" },
+    { label: "Non Smoking", icon: "CigaretteOff" }
+  ]
+};
+
+export const homeExperience = [
+  {
+    title: "Wake up to sea views",
+    description: "Panoramic horizon views of the Arabian sea straight from your pillow.",
+    image: "Home.PNG"
+  },
+  {
+    title: "Walk straight onto the beach",
+    description: "Just 450 meters away from quiet, uncrowded golden sands.",
+    image: "Arrival.html.png"
+  },
+  {
+    title: "Watch the fishing boats return",
+    description: "Witness authentic local fishing traditions right off the coast every morning.",
+    image: "In and Aorund .png"
+  },
+  {
+    title: "Fall asleep to the sound of waves",
+    description: "Soothing natural ocean acoustics uninterrupted by city noise.",
+    image: "The Stay.png"
+  }
+];
+
+export const guestReviews = [
+  {
+    quote: "The sea views alone are worth the trip.",
+    author: "Airbnb Guest",
+    platform: "airbnb",
+    rating: 5
+  },
+  {
+    quote: "Quiet, uncrowded and beautifully designed.",
+    author: "Airbnb Guest",
+    platform: "airbnb",
+    rating: 5
+  },
+  {
+    quote: "The Sea Lounge became our favourite place in the house.",
+    author: "Airbnb Guest",
+    platform: "airbnb",
+    rating: 5
+  },
+  {
+    quote: "Thoughtful amenities and seamless self check-in experience.",
+    author: "Future Guest",
+    platform: "303 OYSTER BAY",
+    rating: 5
+  }
+];
+
+export const stayStoryCards = [
+  {
+    title: "WEATHERED BY THE SEA",
+    text: "The wood-textured walls and weathered finishes reflect the charm of a fisherman's village – aged by sea breeze, salt and sun.",
+    image: "The Stay.png"
+  },
+  {
+    title: "ROPES THAT SAW THE SEA",
+    text: "The ropes you see here aren't just décor. They were brought from actual boats – used, trusted and touched by the ocean.",
+    image: "The Stay.png"
+  },
+  {
+    title: "RIDE THE SAME WAVES",
+    text: "The surfboard on display is from MANTRA SURF SCHOOL, MULKI. It has ridden the waves of Mulki – just like many happy surfers before you.",
+    image: "The Stay.png"
+  },
+  {
+    title: "A PADDLE. A STORY.",
+    text: "This paddle once moved a boat. Now it reminds us to slow down and go with the tide.",
+    image: "The Stay.png"
+  },
+  {
+    title: "SHELLS FROM RAMESWARAM",
+    text: "Handpicked seashells from Rameswaram bring a piece of our sacred coast into your stay.",
+    image: "The Stay.png"
+  },
+  {
+    title: "MADE FOR BEACH DAYS",
+    text: "From the beach lounger to the thatched umbrella, every detail invites you to relax the coastal way – barefoot, unhurried and at peace.",
+    image: "The Stay.png"
+  },
+  {
+    title: "SIMPLE. NATURAL. MEANINGFUL.",
+    text: "We believe in beauty that's real – not perfect. Raw textures, natural materials and objects that mean something. That's the 303 OYSTER BAY way.",
+    image: "The Stay.png"
+  },
+  {
+    title: "EVERY DETAIL. A REMINDER.",
+    text: "Every texture, every object, every view – a quiet reminder of the sea and the life it gives us.",
+    image: "The Stay.png"
+  }
+];
+
+export const arrivalRoutes = [
+  {
+    title: "Mangaluru International Airport (IXE)",
+    distance: "17 Kms | Approx. 30 mins by taxi",
+    details: "Pre-paid taxis are available at the exit of the terminal.",
+    mapQuery: "Mangaluru International Airport to Iddya Surathkal"
+  },
+  {
+    title: "Mangaluru Junction Railway Station (MAJN)",
+    distance: "20 Kms | Approx. 35 mins by taxi",
+    details: "Taxis and rideshares available directly outside station.",
+    mapQuery: "Mangaluru Junction Railway Station to Surathkal"
+  },
+  {
+    title: "Mangaluru Central Railway Station (MAQ)",
+    distance: "17 Kms | Approx. 30 mins by taxi",
+    details: "Centrally located in city, fast taxi connectivity.",
+    mapQuery: "Mangaluru Central Railway Station to Surathkal"
+  },
+  {
+    title: "KSRTC Bejai Bus Stand",
+    distance: "15 Kms | Approx. 25 mins by taxi",
+    details: "Inter-city bus terminal with frequent connections.",
+    mapQuery: "KSRTC Bus Stand Mangalore to Surathkal"
+  }
+];
+
+export const arrivalChecklist = [
+  {
+    title: "PARKING BAY 303",
+    icon: "SquareP",
+    desc: "Your reserved parking bay is numbered 303."
+  },
+  {
+    title: "LIFT ACCESS",
+    icon: "ArrowUpRight",
+    desc: "Take the elevator to the 3rd Floor."
+  },
+  {
+    title: "APARTMENT 303",
+    icon: "DoorOpen",
+    desc: "Turn left immediately upon exiting the lift."
+  },
+  {
+    title: "VISITOR PARKING",
+    icon: "Car",
+    desc: "Additional vehicles may be parked in the open parking area adjacent to the garden."
+  }
+];
+
+export const checkInSteps = [
+  {
+    step: 1,
+    title: "WAKE THE KEYPAD",
+    desc: "Tap any key on the smart lock keypad to wake it up."
+  },
+  {
+    step: 2,
+    title: "ENTER ACCESS CODE",
+    desc: "Enter the unique access code shared by your host followed by *"
+  },
+  {
+    step: 3,
+    title: "ACCESS GRANTED",
+    desc: "The lock will announce 'Access Granted'. The handle unlocks automatically."
+  },
+  {
+    step: 4,
+    title: "ENTER AND RELAX",
+    desc: "The door closes and secures automatically behind you."
+  }
+];
+
+export const stayGuideSections = [
+  {
+    id: "01",
+    pageNumber: "01/06",
+    title: "THE APARTMENT",
+    subtitle: "Everything you need to know for a pleasant and hassle-free stay.",
+    items: [
+      {
+        heading: "LIGHTS, SEA VIEWS & EVENINGS",
+        points: [
+          "The entry passage lighting is motion-sensor operated and switches ON/OFF automatically based on movement.",
+          "The bathrooms are also equipped with motion-sensor lighting for convenience during night use.",
+          "The remaining lights across the apartment can be controlled using the wall switches in each space.",
+          "As this is a coastal home designed around natural light and sea views, we recommend using only the lighting you need during evenings to preserve the relaxed atmosphere."
+        ]
+      },
+      {
+        heading: "SLIDING GLASS DOORS",
+        points: [
+          "The large sliding doors are best enjoyed during early mornings and sunsets when the sea breeze is softer.",
+          "Doors can be operated gently from either side.",
+          "During heavy rain or strong coastal winds, it is advisable to keep them closed.",
+          "Avoid slamming doors, particularly during rainy or windy weather."
+        ],
+        alert: "Children should always be supervised near the balcony and glass areas."
+      },
+      {
+        heading: "CURTAINS & PRIVACY",
+        points: [
+          "Curtains are manually operated and designed to move smoothly along tracks. Please slide gently without pulling.",
+          "GREEN ROOM: The bedroom glass is tinted. During the day, visibility from outside is almost zero. At night, visibility increases when indoor lights are switched on.",
+          "BLUE ROOM – SLIDING PARTITION: The bedroom features a slide & fold glass partition designed to balance openness and privacy. When open, it allows uninterrupted sea views. When closed, it is a private space."
+        ]
+      }
+    ],
+    instructions: {
+      title: "SLIDING & FOLDING DOORS – OPERATING INSTRUCTIONS",
+      steps: [
+        "LOCK (Secure): Push the handle down, ensure doors are aligned, bolt goes in lower track.",
+        "UNLOCK (Open): For Left Side - Slide Left & Pull In; For Right Side - Slide Right & Pull In.",
+        "Slide the handle left or right, pull the handle inward, and open the partition gently."
+      ]
+    }
+  },
+  {
+    id: "02",
+    pageNumber: "02/06",
+    title: "THE KITCHEN",
+    subtitle: "Set up for slow breakfasts, evening snacks and easy holiday cooking.",
+    items: [
+      {
+        heading: "DRINKING WATER",
+        points: [
+          "The apartment is equipped with a live-filtration tankless water purifier for your convenience."
+        ]
+      },
+      {
+        heading: "MORNING TEA & COFFEE",
+        points: [
+          "An electric kettle is placed on the breakfast counter for tea, coffee and hot water preparation.",
+          "The kettle is plugged into a live socket. Please use the switch on the kettle itself to operate it."
+        ]
+      },
+      {
+        heading: "KITCHEN FAN",
+        points: [
+          "The kitchen fan can be operated using the regulator near the breakfast counter."
+        ]
+      },
+      {
+        heading: "KITCHEN ESSENTIALS",
+        points: [
+          "The kitchen is equipped with Pots & pans, Pressure cooker, Induction compatible cooking utensils, Plates, bowls & cutlery, Water glasses, tea & coffee mugs, Mixer / blender, Electric kettle, and Microwave oven."
+        ]
+      },
+      {
+        heading: "COOKING NOTES",
+        points: [
+          "One pan is designated for dosa/roti. The marked Prestige pan may be used for non-vegetarian cooking.",
+          "Disposable cups and plates are available in the lower breakfast-counter cabinet.",
+          "Basic spices and condiments are available for minimal cooking requirements."
+        ]
+      }
+    ],
+    instructions: {
+      title: "WATER PURIFIER – OPERATING INSTRUCTIONS",
+      steps: [
+        "Step 1: Switch ON the purifier. Wait until the blue indicator ring becomes fully illuminated.",
+        "Step 2: Press the centre button once to dispense water. Press again to stop.",
+        "Step 3: Please ensure the outlet is properly closed after use. Please operate responsibly and avoid wastage."
+      ]
+    }
+  },
+  {
+    id: "03",
+    pageNumber: "03/06",
+    title: "COOKING & HOUSEKEEPING",
+    subtitle: "Everything you need to know about cooking, ventilation and waste disposal.",
+    items: [
+      {
+        heading: "WHERE TO FIND THE SWITCHES",
+        points: [
+          "HOB SWITCH: Inside the lower cabinet to the left of the hob. The switch is on the extension box kept on the shelf.",
+          "CHIMNEY SWITCH: Please use the wall switch to operate the Chimney."
+        ]
+      },
+      {
+        heading: "HOB (INDUCTION COOKTOP)",
+        points: [
+          "Switch ON the main hob power supply.",
+          "Select the cooking zone required by touching the control panel.",
+          "Adjust heat level using the + and - controls.",
+          "Place an induction-compatible vessel on the selected zone.",
+          "Each cooking zone operates independently.",
+          "Kindly switch the hob OFF once cooking is complete. If it shows 'H', it means the surface is still hot."
+        ],
+        alert: "IMPORTANT: If a compatible vessel is not detected, the hob will not heat."
+      },
+      {
+        heading: "CHIMNEY (RANGE HOOD)",
+        points: [
+          "Please switch ON the chimney while cooking.",
+          "Suction levels can be adjusted from 1–3.",
+          "Gesture control is enabled and works with a simple hand wave.",
+          "Helps remove coastal humidity, aromas and cooking odours."
+        ]
+      },
+      {
+        heading: "WASTE SEGREGATION",
+        points: [
+          "WET WASTE: Food waste, Organic waste etc. Please empty the wet waste basket (kept below kitchen sink) into the bucket kept next to electricity panel on ground floor.",
+          "DRY WASTE: Plastic, Bottles, Paper, Packaging material etc. Please dump all dry waste in the bucket next to fridge and empty it before leaving into Dry waste Bin on ground floor."
+        ]
+      }
+    ],
+    instructions: {
+      title: "HOB – OPERATING INSTRUCTIONS",
+      steps: [
+        "1. STEP 1: Power on",
+        "2. STEP 2: Choose zone",
+        "3. STEP 3: Increase / decrease temperature using + and -"
+      ]
+    }
+  },
+  {
+    id: "04",
+    pageNumber: "04/06",
+    title: "COMFORT & LIVING",
+    subtitle: "Everything you need for a comfortable stay.",
+    items: [
+      {
+        heading: "TELEVISION & STREAMING",
+        points: [
+          "Guests are welcome to sign in to their own streaming services (Netflix, Prime Video, YouTube, Disney+ Hotstar) during their stay.",
+          "We kindly request that television settings are not altered or reset."
+        ]
+      },
+      {
+        heading: "AIR CONDITIONING",
+        points: [
+          "Both bedrooms and the living room are equipped with dedicated air conditioning.",
+          "For an optimal coastal cooling experience, we recommend a setting between 24°C and 26°C.",
+          "Please switch off the air conditioning when stepping out for extended periods."
+        ]
+      },
+      {
+        heading: "LIGHTS & FANS",
+        points: [
+          "The bedroom features two-way lighting controls, allowing lights to be operated from both entrance and bedside locations.",
+          "Ceiling fan controls are conveniently located on both sides of the bed."
+        ]
+      },
+      {
+        heading: "BATHROOM GEYSERS",
+        points: [
+          "Both bathrooms are equipped with Racold instant water heaters for hot water on demand.",
+          "Please switch the geyser on only when required and switch it off after use."
+        ]
+      },
+      {
+        heading: "ADDITIONAL MATTRESS",
+        points: [
+          "A tri-fold mattress is available under the bed in both bedrooms providing comfortable sleeping arrangements for an additional guest.",
+          "Bedsheets, pillow and pillow cover are available inside the respective cupboards."
+        ]
+      },
+      {
+        heading: "24-HOUR POWER BACKUP",
+        points: [
+          "Oyster Bay is supported by 24-hour power backup through a diesel generator, ensuring uninterrupted comfort during power outages."
+        ]
+      }
+    ]
+  },
+  {
+    id: "05",
+    pageNumber: "05/06",
+    title: "BEACH LIVING",
+    subtitle: "Enjoy the sea, the sun and the serenity responsibly.",
+    items: [
+      {
+        heading: "BEACH ACCESS",
+        points: ["Cross the road to enter the beach directly."]
+      },
+      {
+        heading: "BEACH ETIQUETTE",
+        points: [
+          "Please do not litter on the beach.",
+          "Respect nature, marine life and the local community.",
+          "Please supervise children at all times."
+        ]
+      },
+      {
+        heading: "SAND CARE",
+        points: [
+          "A shower/wash area is available near the well at the rear side of the property.",
+          "Before entering the lift or apartment after the beach, we request guests to rinse off sand and salt water as much as possible."
+        ]
+      },
+      {
+        heading: "BEACH COMFORT",
+        points: [
+          "Beach slippers are provided for your use while at the apartment. Please do not take them away.",
+          "Beach towels are available in the cupboard.",
+          "If you return with wet swimwear, please rinse and dry before entering.",
+          "Do not sit on sofas or beds with wet swimwear."
+        ]
+      },
+      {
+        heading: "LOCAL BEACH TIPS & SAFETY",
+        points: [
+          "The sea can be unpredictable.",
+          "Strong currents may be present, especially during monsoons.",
+          "Swimming is at your own risk. There are no lifeguards on duty.",
+          "Avoid swimming after dark for your safety.",
+          "Apply sunscreen, stay hydrated and take breaks from the sun."
+        ]
+      }
+    ]
+  },
+  {
+    id: "06",
+    pageNumber: "06/06",
+    title: "UTILITIES & CONVENIENCE",
+    subtitle: "Everything you need for a smooth and convenient stay.",
+    items: [
+      {
+        heading: "FIRST AID & ELECTRICAL",
+        points: [
+          "A first aid box is available on the top shelf beside the water purifier.",
+          "A spare fuse is also available nearby in case of an electrical trip.",
+          "If a power circuit trips – Switch OFF heavy appliances first.",
+          "Contact the host if assistance is required."
+        ]
+      },
+      {
+        heading: "EMERGENCY & MEDICAL",
+        points: [
+          "Vijay Medicals (Near Abhish Mall, open till midnight) - Phone: 88844 35855 (1.4 Kms away)",
+          "Ganesh Medicals (Opposite Old Market) - Phone: 82178 85106 (1.4 Kms away)",
+          "Padmavathi Hospital, Surathkal Opas - Phone: 0824 2476600 (2.5 Kms away)"
+        ]
+      },
+      {
+        heading: "ONLINE DELIVERY & SUPERMARKETS",
+        points: [
+          "Big Basket, Swiggy and Zomato service this location.",
+          "Sadanand Super Store - Phone: 0824 247 5539 (1.2 Kms away)",
+          "Marwa Super Store - Phone: 99642 45078 (1 Km away)",
+          "More & Reliance Smart are a little further."
+        ]
+      },
+      {
+        heading: "LAUNDRY & CAB ASSISTANCE",
+        points: [
+          "Long-stay guests requiring laundry support can contact host for nearby details.",
+          "Cab assistance: Check with host for pick-up and drop facilities."
+        ]
+      }
+    ],
+    departureChecklist: [
+      "Switch off all ACs and lights",
+      "Switch off geysers",
+      "Switch off hob and chimney",
+      "Switch off water purifier",
+      "Dispose wet waste in the wet bin",
+      "Dispose dry waste in the dry bin",
+      "Draw the curtains",
+      "Close all windows and balcony doors",
+      "DO NOT switch off the refrigerator",
+      "Check your personal belongings"
+    ]
+  }
+];
+
+export const foodAndExplore = {
+  freshCatch: {
+    title: "FRESH CATCH BY THE BEACH",
+    text: "One of the best parts of staying by the coast is enjoying the catch of the morning by lunch.",
+    points: [
+      "Local fishing boats usually bring in their fresh catch around 7:30 AM.",
+      "Walk approximately 450 metres to the right after exiting the property gate.",
+      "Fresh fish is sold directly near the boats.",
+      "Fish cleaning services are available nearby before you bring it back for cooking.",
+      "If you missed this spot, head south on same road for 2 Kms to Kulai Dhakke which has a larger number of boats."
+    ]
+  },
+  categories: [
+    {
+      name: "BREAKFAST",
+      items: [
+        {
+          name: "Sadanand Restaurant",
+          dist: "1 Km | 5 mins",
+          mustTry: ["Goli Baje", "Breakfast Specials"],
+          veg: true
+        },
+        {
+          name: "Rao's City Lunch Home",
+          dist: "1 Km | 5 mins",
+          mustTry: ["Masala Dosa", "Filter Coffee"],
+          veg: true
+        }
+      ]
+    },
+    {
+      name: "MANGALURU CLASSICS",
+      items: [
+        {
+          name: "Janatha Deluxe, Pathumudi",
+          dist: "15 Kms | 25 mins",
+          mustTry: ["Idli-Thove", "Goli Baje"],
+          desc: "A long-standing favourite with locals.",
+          veg: true
+        },
+        {
+          name: "New Taj Mahal Café, Kodial Bail",
+          dist: "16 Kms | 25 mins",
+          mustTry: ["Rotti Bhaji", "Bibbya Upkari", "Thuppa Dosa", "Filter Coffee"],
+          desc: "A legendary Mangaluru institution.",
+          veg: true
+        },
+        {
+          name: "Indra Bhavan, Balmatta",
+          dist: "16 Kms | 25 mins",
+          mustTry: ["Sajjige Rotti", "Buns", "Khali Dosa"],
+          desc: "A 75-year legacy of authentic Mangalorean cuisine.",
+          veg: true
+        }
+      ]
+    },
+    {
+      name: "SEAFOOD & NON-VEGETARIAN",
+      items: [
+        {
+          name: "Chavadi by Sadanand",
+          dist: "1 Km | 5 mins",
+          mustTry: ["Kori Rotti", "Chicken Lollipop"],
+          desc: "A modern take on classic Mangalorean flavours."
+        },
+        {
+          name: "Giri Manja's",
+          dist: "15 Kms | 25 mins",
+          mustTry: ["Fish Thali", "Prawn Ghee Roast", "Anjal (Kingfish) Fry"],
+          desc: "One of Mangaluru's most iconic seafood restaurants."
+        },
+        {
+          name: "Mangala Bar & Restaurant",
+          dist: "18 Kms | 30 mins",
+          mustTry: ["Bafat (Pork)", "Indad (Pork)", "Catholic Specialties"],
+          desc: "Authentic Mangalorean Catholic cuisine & drinks."
+        }
+      ]
+    },
+    {
+      name: "DESSERTS & SWEET TREATS",
+      items: [
+        {
+          name: "Pabbas",
+          dist: "13 Kms | 20 mins",
+          mustTry: ["Gadbad Ice Cream", "Chocolate Dad", "Tiramisu Sundae"],
+          desc: "A Mangaluru institution and a mandatory stop for dessert lovers."
+        }
+      ]
+    }
+  ],
+  dayTrips: [
+    {
+      destination: "UDUPI",
+      distance: "45 Kms | 45 Minutes",
+      spots: ["Sri Krishna Temple", "Manipal", "Malpe Beach", "St. Mary's Island"],
+      placesToEat: [
+        { name: "Mitra Samaj", mustTry: "Goli Baje", veg: true },
+        { name: "Diana", mustTry: "Cutlet, Gadbad", veg: true }
+      ]
+    },
+    {
+      destination: "KUNDAPURA",
+      distance: "80 Kms | 90 Minutes",
+      desc: "Known for quiet beaches, estuaries and distinctive Kundapura-style cuisine.",
+      placesToEat: [
+        { name: "Shetty Lunch Home", mustTry: "Chicken Ghee Roast (Original creators, expect ~1hr wait - totally worth it!)" }
+      ]
+    }
+  ],
+  hostPicks: [
+    { title: "Best Sunset", name: "Oyster Bay Surathkal" },
+    { title: "Best Seafood", name: "Giri Manja's" },
+    { title: "Best Coastal Meal", name: "Shetty Lunch Home, Kundapur" },
+    { title: "Best Kori Rotti", name: "Chavadi by Sadananda" },
+    { title: "Best Veg Meal", name: "Indra Bhavan" },
+    { title: "Best Dessert", name: "Diana Udupi, Gadbad" },
+    { title: "Best Day Trip", name: "Udupi & Malpe Beach" }
+  ]
+};
