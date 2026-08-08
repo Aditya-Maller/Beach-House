@@ -15,6 +15,15 @@ import {
 } from 'lucide-react';
 import { propertyInfo, guestReviews, bookingConfig } from '../data/propertyData';
 
+import homeImg from '../../Home.PNG';
+import arrivalImg from '../../Arrival.html.png';
+import aroundImg from '../../In and Aorund .png';
+import stayImg from '../../The Stay.png';
+import kitchen1Img from '../../Kitchen 1.png';
+import kitchen2Img from '../../Kitchen 2.png';
+import galleryImg from '../../Gallery.png';
+import selfCheckinImg from '../../Self Check in.png';
+
 export default function BookPage() {
   const [checkIn, setCheckIn] = useState('');
   const [checkOut, setCheckOut] = useState('');
@@ -49,10 +58,9 @@ export default function BookPage() {
     { icon: Heart, title: "SUPERHOST QUALITY", text: "Committed to hospitality that exceeds your expectations." }
   ];
 
-  // Placeholder images for the Instagram grid based on the mockup
   const instagramImages = [
-    "Home.PNG", "Arrival.html.png", "In and Aorund .png", "The Stay.png",
-    "Kitchen 1.png", "Kitchen 2.png", "Gallery.png", "Self Check in.png"
+    homeImg, arrivalImg, aroundImg, stayImg,
+    kitchen1Img, kitchen2Img, galleryImg, selfCheckinImg
   ];
 
   return (
@@ -60,7 +68,7 @@ export default function BookPage() {
       
       {/* Hero Section */}
       <section className="hero-card" style={{ 
-        backgroundImage: `url('./assets/Home.PNG')`,
+        backgroundImage: `url(${homeImg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         marginBottom: '40px'
@@ -298,7 +306,7 @@ export default function BookPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '10px' }}>
               {instagramImages.map((img, i) => (
                 <div key={i} style={{ aspectRatio: '1/1', borderRadius: '8px', overflow: 'hidden' }}>
-                  <img src={`./assets/${img}`} alt="Instagram preview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img src={img} alt="Instagram preview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
               ))}
             </div>
