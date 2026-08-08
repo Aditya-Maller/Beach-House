@@ -1,0 +1,171 @@
+backend:
+  name: github
+  repo: Aditya-Maller/Beach-House
+  branch: main
+
+# These settings map images to the root folder as currently requested by your app
+media_folder: "public/assets"
+public_folder: "./assets"
+# Note: since some images are imported dynamically in React from the root folder, 
+# for best compatibility going forward, the uncle should just upload to assets.
+
+collections:
+  - name: "website_data"
+    label: "Website Content"
+    editor:
+      preview: false
+    files:
+      - label: "Property Settings"
+        name: "propertyData"
+        file: "src/data/propertyData.json"
+        description: "Edit the core text, images, and links across the website."
+        fields:
+          - label: "Booking Config"
+            name: "bookingConfig"
+            widget: "object"
+            fields:
+              - {label: "Airbnb URL", name: "airbnbUrl", widget: "string"}
+              - {label: "Instagram Handle", name: "instagramHandle", widget: "string"}
+              - {label: "Instagram URL", name: "instagramUrl", widget: "string"}
+          
+          - label: "Property Info"
+            name: "propertyInfo"
+            widget: "object"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Hero Subtitle", name: "heroSubtitle", widget: "text"}
+              - {label: "Address", name: "address", widget: "string"}
+              - {label: "Host Phone", name: "hostPhone", widget: "string"}
+              - {label: "Security Phone", name: "securityPhone", widget: "string"}
+              - {label: "WhatsApp Number", name: "whatsappNumber", widget: "string"}
+              - {label: "WiFi Name", name: "wifiName", widget: "string"}
+              - {label: "WiFi Password", name: "wifiPassword", widget: "string"}
+              - label: "Specs"
+                name: "specs"
+                widget: "list"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Icon", name: "icon", widget: "string"}
+
+          - label: "Home Experience"
+            name: "homeExperience"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Image", name: "image", widget: "string"}
+
+          - label: "Guest Reviews"
+            name: "guestReviews"
+            widget: "list"
+            fields:
+              - {label: "Quote", name: "quote", widget: "text"}
+              - {label: "Author", name: "author", widget: "string"}
+              - {label: "Platform", name: "platform", widget: "string"}
+              - {label: "Rating", name: "rating", widget: "number", min: 1, max: 5}
+
+          - label: "Stay Story Cards"
+            name: "stayStoryCards"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Image", name: "image", widget: "string"}
+
+          - label: "Arrival Routes"
+            name: "arrivalRoutes"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Distance", name: "distance", widget: "string"}
+              - {label: "Details", name: "details", widget: "text"}
+              - {label: "Map Query", name: "mapQuery", widget: "string", required: false}
+
+          - label: "Arrival Checklist"
+            name: "arrivalChecklist"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Icon", name: "icon", widget: "string"}
+              - {label: "Description", name: "desc", widget: "text"}
+
+          - label: "Check-In Steps"
+            name: "checkInSteps"
+            widget: "list"
+            fields:
+              - {label: "Step Number", name: "step", widget: "number"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "desc", widget: "text"}
+
+          - label: "Stay Guide Sections"
+            name: "stayGuideSections"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Page Number", name: "pageNumber", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Heading", name: "heading", widget: "string"}
+                  - {label: "Points", name: "points", widget: "list"}
+                  - {label: "Alert (Optional)", name: "alert", widget: "string", required: false}
+              - label: "Instructions (Optional)"
+                name: "instructions"
+                widget: "object"
+                required: false
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Steps", name: "steps", widget: "list"}
+              - {label: "Departure Checklist (Optional)", name: "departureChecklist", widget: "list", required: false}
+
+          - label: "Food & Explore"
+            name: "foodAndExplore"
+            widget: "object"
+            fields:
+              - label: "Fresh Catch"
+                name: "freshCatch"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Text", name: "text", widget: "text"}
+                  - {label: "Points", name: "points", widget: "list"}
+              - label: "Categories"
+                name: "categories"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    fields:
+                      - {label: "Name", name: "name", widget: "string"}
+                      - {label: "Distance", name: "dist", widget: "string"}
+                      - {label: "Description", name: "desc", widget: "text", required: false}
+                      - {label: "Vegetarian", name: "veg", widget: "boolean", required: false}
+                      - {label: "Must Try", name: "mustTry", widget: "list", required: false}
+              - label: "Day Trips"
+                name: "dayTrips"
+                widget: "list"
+                fields:
+                  - {label: "Destination", name: "destination", widget: "string"}
+                  - {label: "Distance", name: "distance", widget: "string"}
+                  - {label: "Description", name: "desc", widget: "text", required: false}
+                  - {label: "Spots", name: "spots", widget: "list", required: false}
+                  - label: "Places To Eat"
+                    name: "placesToEat"
+                    widget: "list"
+                    required: false
+                    fields:
+                      - {label: "Name", name: "name", widget: "string"}
+                      - {label: "Must Try", name: "mustTry", widget: "string"}
+                      - {label: "Vegetarian", name: "veg", widget: "boolean", required: false}
+              - label: "Host Picks"
+                name: "hostPicks"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Name", name: "name", widget: "string"}
