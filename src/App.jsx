@@ -10,6 +10,7 @@ import ArrivalPage from './pages/ArrivalPage';
 import CheckInPage from './pages/CheckInPage';
 import StayGuidePage from './pages/StayGuidePage';
 import InAndAroundPage from './pages/InAndAroundPage';
+import BookPage from './pages/BookPage';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -78,6 +79,10 @@ export default function App() {
 
         {activeTab === 'around' && (
           <InAndAroundPage />
+        )}
+
+        {activeTab === 'book' && (
+          <BookPage />
         )}
       </main>
 

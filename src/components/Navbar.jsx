@@ -20,7 +20,7 @@ export default function Navbar({ activeTab, setActiveTab, onOpenSearch, onOpenBo
     { id: 'arrival', label: 'ARRIVAL', icon: MapPin },
     { id: 'guide', label: 'STAY GUIDE', icon: BookOpen },
     { id: 'around', label: 'IN & AROUND', icon: Compass },
-    { id: 'checkin', label: 'CHECK-IN', icon: CalendarCheck }
+    { id: 'book', label: 'BOOK', icon: CalendarCheck, isSpecial: true }
   ];
 
   return (
@@ -99,11 +99,14 @@ export default function Navbar({ activeTab, setActiveTab, onOpenSearch, onOpenBo
         {navItems.map((item) => {
           const Icon = item.icon;
           const isActive = activeTab === item.id;
+          const isSpecial = item.isSpecial;
+          
           return (
             <button
               key={item.id}
               onClick={() => setActiveTab(item.id)}
               className={`bottom-nav-item ${isActive ? 'active' : ''}`}
+              style={isSpecial ? { color: isActive ? 'var(--color-amber)' : 'rgba(217, 119, 6, 0.7)' } : {}}
             >
               <Icon size={20} style={{ marginBottom: '3px' }} />
               <span>{item.label}</span>

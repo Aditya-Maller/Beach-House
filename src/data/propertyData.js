@@ -601,3 +601,9 @@ export const foodAndExplore = {
     { title: "Best Day Trip", name: "Udupi & Malpe Beach" }
   ]
 };
+
+export const bookingConfig = {
+  airbnbUrl: "https://www.airbnb.com/rooms/YOUR_LISTING_ID", // REPLACE YOUR_LISTING_ID with your actual Airbnb room ID
+  instagramHandle: "@303oysterbay",
+  instagramUrl: "https://www.instagram.com/303oysterbay"
+};
