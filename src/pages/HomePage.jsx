@@ -17,6 +17,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { propertyInfo, homeExperience, guestReviews } from '../data/propertyData';
+import MediaRenderer from './MediaRenderer';
 
 // Import image assets
 import homeHeroImg from '../../Home.PNG';
@@ -173,15 +174,20 @@ export default function HomePage({ onSelectTab, onOpenBook }) {
           gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))',
           gap: '20px'
         }}>
-          {homeExperience.map((exp, idx) => (
+          {homeExperience.map((exp, idx) => {
+            let mediaSrc = experienceImages[idx % experienceImages.length];
+            if (exp.image && exp.image.startsWith('/assets/')) {
+              mediaSrc = import.meta.env.BASE_URL + exp.image.substring(1);
+            }
+            
+            return (
             <div key={idx} className="glass-card" style={{ overflow: 'hidden', cursor: 'pointer' }} onClick={() => onSelectTab('gallery')}>
               <div style={{ height: '180px', overflow: 'hidden' }}>
-                <img 
-                  src={experienceImages[idx % experienceImages.length]} 
+                <MediaRenderer 
+                  src={mediaSrc} 
                   alt={exp.title}
                   style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.3s ease' }}
-                  onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-                  onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                  className="hover-zoom"
                 />
               </div>
               <div style={{ padding: '16px', textAlign: 'center' }}>

@@ -10,6 +10,7 @@ import {
   Compass
 } from 'lucide-react';
 import { stayStoryCards, propertyInfo } from '../data/propertyData';
+import MediaRenderer from './MediaRenderer';
 
 // Assets
 import stayImg from '../../The Stay.png';
@@ -71,34 +72,45 @@ export default function TheStayPage({ onSelectTab }) {
         gap: '24px'
       }}>
         {stayStoryCards.map((card, idx) => (
-          <div key={idx} className="glass-card" style={{ padding: '24px', display: 'flex', flexDirection: 'column' }}>
-            <div style={{
-              width: '42px',
-              height: '42px',
-              borderRadius: '50%',
-              background: 'rgba(212, 175, 55, 0.15)',
-              color: 'var(--color-amber)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              marginBottom: '16px',
-              fontWeight: 'bold',
-              fontFamily: 'var(--font-serif)'
-            }}>
-              0{idx + 1}
+          <div key={idx} className="glass-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+            {card.image && (
+              <div style={{ height: '180px', width: '100%', overflow: 'hidden' }}>
+                <MediaRenderer 
+                  src={card.image.startsWith('/assets/') ? import.meta.env.BASE_URL + card.image.substring(1) : card.image} 
+                  alt={card.title}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+              </div>
+            )}
+            <div style={{ padding: '24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
+              <div style={{
+                width: '42px',
+                height: '42px',
+                borderRadius: '50%',
+                background: 'rgba(212, 175, 55, 0.15)',
+                color: 'var(--color-amber)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginBottom: '16px',
+                fontWeight: 'bold',
+                fontFamily: 'var(--font-serif)'
+              }}>
+                0{idx + 1}
+              </div>
+              <h3 style={{
+                fontFamily: 'var(--font-serif)',
+                fontSize: '1.3rem',
+                color: 'var(--color-navy)',
+                marginBottom: '8px',
+                letterSpacing: '0.02em'
+              }}>
+                {card.title}
+              </h3>
+              <p style={{ fontSize: '0.92rem', color: 'var(--color-text-muted)', lineHeight: '1.6', flex: 1 }}>
+                {card.text}
+              </p>
             </div>
-            <h3 style={{
-              fontFamily: 'var(--font-serif)',
-              fontSize: '1.3rem',
-              color: 'var(--color-navy)',
-              marginBottom: '8px',
-              letterSpacing: '0.02em'
-            }}>
-              {card.title}
-            </h3>
-            <p style={{ fontSize: '0.92rem', color: 'var(--color-text-muted)', lineHeight: '1.6', flex: 1 }}>
-              {card.text}
-            </p>
           </div>
         ))}
       </div>
