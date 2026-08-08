@@ -1,6 +1,11 @@
 {
+  "bookingConfig": {
+    "airbnbUrl": "https://www.airbnb.com/rooms/YOUR_LISTING_ID",
+    "instagramHandle": "@303oysterbay",
+    "instagramUrl": "https://www.instagram.com/303oysterbay"
+  },
   "propertyInfo": {
-    "name": "303 OYSTER BAY",
+    "name": "303 OYSTER BAY ok where is this",
     "tagline": "Beachfront Stay · Surathkal, Mangaluru",
     "heroSubtitle": "The Arabian Sea at your doorstep. Uninterrupted views from every room. None of the crowds.",
     "address": "Iddya, Surathkal • Mangaluru, Karnataka, India",
@@ -515,20 +520,20 @@
           {
             "name": "Sadanand Restaurant",
             "dist": "1 Km | 5 mins",
+            "veg": true,
             "mustTry": [
               "Goli Baje",
               "Breakfast Specials"
-            ],
-            "veg": true
+            ]
           },
           {
             "name": "Rao's City Lunch Home",
             "dist": "1 Km | 5 mins",
+            "veg": true,
             "mustTry": [
               "Masala Dosa",
               "Filter Coffee"
-            ],
-            "veg": true
+            ]
           }
         ]
       },
@@ -538,35 +543,35 @@
           {
             "name": "Janatha Deluxe, Pathumudi",
             "dist": "15 Kms | 25 mins",
+            "desc": "A long-standing favourite with locals.",
+            "veg": true,
             "mustTry": [
               "Idli-Thove",
               "Goli Baje"
-            ],
-            "desc": "A long-standing favourite with locals.",
-            "veg": true
+            ]
           },
           {
             "name": "New Taj Mahal Café, Kodial Bail",
             "dist": "16 Kms | 25 mins",
+            "desc": "A legendary Mangaluru institution.",
+            "veg": true,
             "mustTry": [
               "Rotti Bhaji",
               "Bibbya Upkari",
               "Thuppa Dosa",
               "Filter Coffee"
-            ],
-            "desc": "A legendary Mangaluru institution.",
-            "veg": true
+            ]
           },
           {
             "name": "Indra Bhavan, Balmatta",
             "dist": "16 Kms | 25 mins",
+            "desc": "A 75-year legacy of authentic Mangalorean cuisine.",
+            "veg": true,
             "mustTry": [
               "Sajjige Rotti",
               "Buns",
               "Khali Dosa"
-            ],
-            "desc": "A 75-year legacy of authentic Mangalorean cuisine.",
-            "veg": true
+            ]
           }
         ]
       },
@@ -576,31 +581,31 @@
           {
             "name": "Chavadi by Sadanand",
             "dist": "1 Km | 5 mins",
+            "desc": "A modern take on classic Mangalorean flavours.",
             "mustTry": [
               "Kori Rotti",
               "Chicken Lollipop"
-            ],
-            "desc": "A modern take on classic Mangalorean flavours."
+            ]
           },
           {
             "name": "Giri Manja's",
             "dist": "15 Kms | 25 mins",
+            "desc": "One of Mangaluru's most iconic seafood restaurants.",
             "mustTry": [
               "Fish Thali",
               "Prawn Ghee Roast",
               "Anjal (Kingfish) Fry"
-            ],
-            "desc": "One of Mangaluru's most iconic seafood restaurants."
+            ]
           },
           {
             "name": "Mangala Bar & Restaurant",
             "dist": "18 Kms | 30 mins",
+            "desc": "Authentic Mangalorean Catholic cuisine & drinks.",
             "mustTry": [
               "Bafat (Pork)",
               "Indad (Pork)",
               "Catholic Specialties"
-            ],
-            "desc": "Authentic Mangalorean Catholic cuisine & drinks."
+            ]
           }
         ]
       },
@@ -610,12 +615,12 @@
           {
             "name": "Pabbas",
             "dist": "13 Kms | 20 mins",
+            "desc": "A Mangaluru institution and a mandatory stop for dessert lovers.",
             "mustTry": [
               "Gadbad Ice Cream",
               "Chocolate Dad",
               "Tiramisu Sundae"
-            ],
-            "desc": "A Mangaluru institution and a mandatory stop for dessert lovers."
+            ]
           }
         ]
       }
@@ -685,10 +690,5 @@
         "name": "Udupi & Malpe Beach"
       }
     ]
-  },
-  "bookingConfig": {
-    "airbnbUrl": "https://www.airbnb.com/rooms/YOUR_LISTING_ID",
-    "instagramHandle": "@303oysterbay",
-    "instagramUrl": "https://www.instagram.com/303oysterbay"
   }
 }
