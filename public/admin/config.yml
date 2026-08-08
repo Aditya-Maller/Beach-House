@@ -5,7 +5,7 @@ backend:
 
 # These settings map images to the root folder as currently requested by your app
 media_folder: "public/assets"
-public_folder: "./assets"
+public_folder: "/assets"
 # Note: since some images are imported dynamically in React from the root folder, 
 # for best compatibility going forward, the uncle should just upload to assets.
 
